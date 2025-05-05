@@ -363,12 +363,14 @@ body {
 @keyframes twinkle {
   0%, 100% {
     opacity: 1;
+    color:tomato;
   }
   50% {
-    opacity: 0.3;
+    opacity: 0.0;
+    color:rgb(1, 207, 104)
   }
 }
 
 .twinkle {
-  animation: twinkle 1.5s infinite ease-in-out;
+  animation: twinkle 1s infinite ease-in-out;
 }
