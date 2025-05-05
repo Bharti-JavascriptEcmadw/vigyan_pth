@@ -55,12 +55,12 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-auto flex-wrap sm:flex-nowrap">
 
             {/* Logo */}
-            <div className="w-[40%] sm:w-[50%] md:w-[20%] lg:w-[25%] lg:h-[6vw]">
+            <div className="w-[50%] sm:w-[50%] md:w-[20%] lg:w-[25%] lg:h-[6vw]">
               <a href="/" className="flex items-center">
                 <img
                   src="/assetes/vigyan/logo.png"
                   alt="Logo"
-                  className="h-[10vw] sm:h-[5vw] md:h-[6vw] lg:h-[5vw] w-[19vw] md:w-[12vw] lg:w-[25vw] max-w-full object-contain"
+                  className="h-[20vw] sm:h-[5vw] md:h-[6vw] lg:h-[5vw] w-[40vw] md:w-[12vw] lg:w-[25vw] max-w-full object-contain"
                 />
               </a>
             </div>
@@ -135,7 +135,7 @@ const Navbar = () => {
 
 
             {/* Hamburger Icon (shown only on xs) */}
-            <div className="md:hidden block">
+            <div className="sm:hidden block">
               <button onClick={toggleMenu} className="text-black text-[6vw] focus:outline-none">
                 {isOpen ? <HiOutlineX /> : <HiOutlineMenuAlt3 />}
               </button>
