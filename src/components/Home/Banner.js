@@ -47,15 +47,12 @@
 //           </p>
 //         </div> */}
 
-// <div className="mt-6 flex flex-wrap justify-center gap-4 animate-slide-up-delay">
-  
-// <Link to="/bookdemo">
+//     <div className="mt-6 flex flex-wrap justify-center gap-4 animate-slide-up-delay">
 //   <button className="bg-teal-500 hover:bg-red-700 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full font-semibold transition-transform transform hover:scale-105">
 //     ABOUT MORE →
 //   </button>
-//   </Link>
   
-//   <Link to="/about">
+//   <Link to="/book-demo">
 //     <button className="bg-blue-700 hover:bg-red-700 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full font-semibold transition-transform transform hover:scale-105">
 //       BOOK DEMO !!
 //     </button>
@@ -70,70 +67,6 @@
 // export default Banner;
 
 
-// import React, { useEffect, useState } from "react";
-// import { Link } from "react-router-dom";
-
-// const images = [
-//   "/assetes/vigyan/Robot.png",
-//   "/assetes/vigyan/slider-1.jpg",
-//   "/assetes/vigyan/robot1.avif",
-// ];
-
-// const Banner = () => {
-//   const [currentIndex, setCurrentIndex] = useState(0);
-
-//   useEffect(() => {
-//     const interval = setInterval(() => {
-//       setCurrentIndex((prevIndex) =>
-//         prevIndex === images.length - 1 ? 0 : prevIndex + 1
-//       );
-//     }, 3000); // change image every 3 seconds
-//     return () => clearInterval(interval);
-//   }, []);
-
-//   return (
-//     <section className="bg-gradient-to-br from-gray-900 to-teal-500 py-10 sm:py-16 md:py-20 lg:py-24 px-4">
-//       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
-        
-//         {/* Image - Left Side */}
-//         <div className="w-full md:w-1/2 animate-slide-in-left">
-//           <img
-//             src={images[currentIndex]}
-//             alt="Banner"
-//             className="shadow-2xl w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover transition-all duration-700"
-//           />
-//         </div>
-
-//         {/* Text Content - Right Side */}
-//         <div className="w-full md:w-1/2 text-center md:text-left text-white animate-slide-in-right">
-//           <h3 className="text-yellow-400 uppercase text-sm sm:text-base mb-3 font-bold tracking-widest">
-//             Welcome to Vigyan Pathshala!
-//           </h3>
-//           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
-//             Empowering Young Minds{" "}
-//             <span className="text-teal-400 block">Through Innovation & Technology</span>
-//           </h1>
-
-//           <div className="mt-6 flex flex-wrap md:flex-nowrap justify-center md:justify-start gap-4">
-//             <Link to="/about">
-//               <button className="bg-teal-500 hover:bg-red-700 text-white px-6 py-3 rounded-full font-semibold transition-transform transform hover:scale-105">
-//                 ABOUT MORE →
-//               </button>
-//             </Link>
-
-//             <Link to="/bookdemo">
-//               <button className="bg-blue-700 hover:bg-red-700 text-white px-6 py-3 rounded-full font-semibold transition-transform transform hover:scale-105">
-//                 BOOK DEMO !!
-//               </button>
-//             </Link>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Banner;
 
 
 import React, { useEffect, useState } from "react";
@@ -159,45 +92,46 @@ const Banner = () => {
   }, []);
 
   return (
-    <section className="banner-section h-[90vh] px-4 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto h-full flex flex-col md:flex-row items-center justify-between gap-10">
-
-        {/* Left Image */}
-        <div className="w-full md:w-1/2 h-full animate-image-zoom">
-          <img
-            src={images[currentIndex]}
-            alt="Banner"
-            className="w-full h-full object-cover rounded-xl shadow-2xl"
-          />
-        </div>
-
-        {/* Right Content */}
-        <div className="w-full md:w-1/2 text-white text-center md:text-left px-2 md:px-4 animate-slide-text">
+    <section className="banner-section h-[90vh] w-full overflow-hidden">
+    <div className="flex flex-col md:flex-row h-full w-full">
+  
+      {/* Left Image - full height/width, no margin */}
+      <div className="w-full md:w-1/2 h-full m-0 p-0 animate-image-zoom">
+        <img
+          src={images[currentIndex]}
+          alt="Banner"
+          className="w-full h-full object-cover rounded-none m-0 p-0"
+        />
+      </div>
+  
+      {/* Right Content */}
+      <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start px-4 md:px-8 text-white text-center md:text-left animate-slide-text">
         <h3 className="animate-bounce-x text-yellow-400 uppercase text-sm sm:text-base mb-3 font-bold tracking-widest">
-  Welcome to Vigyan Pathshala!
-</h3>
+          Welcome to Vigyan Pathshala!
+        </h3>
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
+  Empowering Young Minds
+  <span className="block text-gray-700">
+    Through <span className="twinkle text-[#FFD700]">Innovation</span> & Technology
+  </span>
+</h1>
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
-            Empowering Young Minds
-            <span className="block text-cyan-300">Through Innovation & Technology</span>
-          </h1>
-
-          <div className="mt-6 flex flex-wrap md:flex-nowrap justify-center md:justify-start gap-4">
-            <Link to="/about">
-              <button className="bg-teal-500 hover:bg-red-700 text-white px-6 py-3 rounded-full font-semibold transition hover:scale-110">
-                ABOUT MORE →
-              </button>
-            </Link>
-
-            <Link to="/bookdemo">
-              <button className="bg-blue-700 hover:bg-red-700 text-white px-6 py-3 rounded-full font-semibold transition hover:scale-110">
-                BOOK DEMO !!
-              </button>
-            </Link>
-          </div>
+        <div className="mt-6 flex flex-wrap md:flex-nowrap justify-center md:justify-start gap-4">
+          <Link to="/about">
+            <button className="bg-teal-500 hover:bg-red-700 text-white px-6 py-3 rounded-full font-semibold transition hover:scale-110">
+              ABOUT MORE →
+            </button>
+          </Link>
+          <Link to="/bookdemo">
+            <button className="bg-blue-700 hover:bg-red-700 text-white px-6 py-3 rounded-full font-semibold transition hover:scale-110">
+              BOOK DEMO !!
+            </button>
+          </Link>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+  
   );
 };
 

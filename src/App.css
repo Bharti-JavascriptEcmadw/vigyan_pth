@@ -3,6 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* global styles (if needed) */
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .sticky-top {
   position: sticky !important;
   top: 0;
@@ -347,4 +354,21 @@
 .animate-bounce-x {
   animation: bounceX 4s ease-in-out infinite;
   display: inline-block;
+}
+
+
+/* innovation  */
+
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.twinkle {
+  animation: twinkle 1.5s infinite ease-in-out;
 }
