@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const images = [
   "/assetes/vigyan/Robot.png",
@@ -14,13 +15,13 @@ const Banner = () => {
       setCurrentIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 4000); // every 4 seconds
+    }, 1000); // every 4 seconds
     return () => clearInterval(interval);
   }, []);
 
   return (
     <section
-      className="relative h-[70vh] sm:h-[80vh] md:h-[90vh] w-full bg-cover bg-center flex items-center justify-center transition-all duration-700 ease-in-out"
+      className="relative h-[70vh] sm:h-[80vh] md:h-[90vh] w-full bg-cover bg-center flex items-center justify-center transition-all  ease-in-out"
       style={{
         backgroundImage: `url('${images[currentIndex]}')`,
       }}
@@ -46,14 +47,21 @@ const Banner = () => {
           </p>
         </div> */}
 
-        <div className="mt-6 flex flex-wrap justify-center gap-4 animate-slide-up-delay">
-          <button className="bg-teal-500 hover:bg-red-700 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full font-semibold transition-transform transform hover:scale-105">
-            ABOUT MORE →
-          </button>
-          <button className="bg-blue-700 hover:bg-red-700 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full font-semibold transition-transform transform hover:scale-105 ">
-            BOOK DEMO !!
-          </button>
-        </div>
+<div className="mt-6 flex flex-wrap justify-center gap-4 animate-slide-up-delay">
+  
+<Link to="/bookdemo">
+  <button className="bg-teal-500 hover:bg-red-700 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full font-semibold transition-transform transform hover:scale-105">
+    ABOUT MORE →
+  </button>
+  </Link>
+  
+  <Link to="/about">
+    <button className="bg-blue-700 hover:bg-red-700 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full font-semibold transition-transform transform hover:scale-105">
+      BOOK DEMO !!
+    </button>
+  </Link>
+</div>
+
       </div>
     </section>
   );
