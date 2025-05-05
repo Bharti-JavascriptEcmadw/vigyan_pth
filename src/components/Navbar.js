@@ -79,10 +79,10 @@ const Navbar = () => {
     <span>Our Solution</span>
     <FaChevronDown className="text-[1vw]" />
   </a>
-  <div className="absolute left-0 top-full bg-teal-500 text-white shadow-lg w-[250px] z-50 opacity-0 group-hover:opacity-100 group-hover:block transition-opacity duration-300 ease-in-out transform group-hover:scale-100 scale-95">
+  <div className="absolute left-0 top-full bg-white text-white shadow-lg w-[250px] z-50 opacity-0 group-hover:opacity-100 group-hover:block transition-opacity duration-300 ease-in-out transform group-hover:scale-100 scale-95">
     <ul className="p-2">
-      <li><a href="/" className="block py-2 px-5 hover:bg-gray-200 text-black">School Program</a></li>
-      <li><a href="/" className="block py-2 px-5 hover:bg-gray-200 text-black">Composite Robotics Lab</a></li>
+      <li><a href="/" className="block py-2 px-5 hover:bg-gray-200 text-gray-800">School Program</a></li>
+      <li><a href="/" className="block py-2 px-5 hover:bg-gray-200 text-gray-800">Composite Robotics Lab</a></li>
     </ul>
   </div>
 </li>
