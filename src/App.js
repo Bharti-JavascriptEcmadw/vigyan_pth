@@ -11,6 +11,8 @@ import BookDemo from "./components/BookDemo";
 import Event from "./pages/Event";
 import LabInAction from "./components/Resources/LabInAction";
 import ProjectVideo from "./components/Resources/ProjectVideo";
+import SchoolProgram from "./pages/SchoolProgram";
+import Composite_Lab from "./pages/Composite_Lab";
 
 
 
@@ -31,7 +33,11 @@ const App = () => {
         <Route path="/bookdemo" element={<BookDemo />} />
         <Route path="/lab-in-action" element={<LabInAction />} />
         <Route path="/event" element={<Event />} />
-        <Route path="/project-video" element={<ProjectVideo />} />
+        <Route path="/school-program" element={<SchoolProgram />} />
+        <Route path="/composite-lab" element={<Composite_Lab />} />
+
+
+
 
       </Routes>
       <Footer/>

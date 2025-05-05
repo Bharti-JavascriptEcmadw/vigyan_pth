@@ -76,13 +76,13 @@ const Navbar = () => {
               {/* Our Solution Dropdown */}
               <li className="relative group">
   <a href="/" className="flex items-center space-x-1 whitespace-nowrap px-2 py-6 cursor-pointer">
-    <span>Our Solution</span>
+    <span>Our Services</span>
     <FaChevronDown className="text-[1vw]" />
   </a>
   <div className="absolute left-0 top-full bg-white text-white shadow-lg w-[250px] z-50 opacity-0 group-hover:opacity-100 group-hover:block transition-opacity duration-300 ease-in-out transform group-hover:scale-100 scale-95">
     <ul className="p-2">
-      <li><a href="/" className="block py-2 px-5 hover:bg-gray-200 text-gray-800">School Program</a></li>
-      <li><a href="/" className="block py-2 px-5 hover:bg-gray-200 text-gray-800">Composite Robotics Lab</a></li>
+      <li><a href="/school-program" className="block py-2 px-5 hover:bg-gray-200 text-gray-800">School Program</a></li>
+      <li><a href="/composite-lab" className="block py-2 px-5 hover:bg-gray-200 text-gray-800">Composite Robotics Lab</a></li>
     </ul>
   </div>
 </li>
