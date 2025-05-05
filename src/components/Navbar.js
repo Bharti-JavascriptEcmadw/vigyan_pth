@@ -66,8 +66,8 @@ const Navbar = () => {
             </div>
 
             {/* Nav Links (hidden on xs, shown on sm+) */}
-            <div className="hidden sm:flex w-full justify-center flex-wrap md:flex-nowrap sticky top-0 z-50">
-              <ul className="flex gap-[2%] text-[3vw] sm:text-[1.5vw] md:text-[1.5vw] lg:text-[1.3vw] text-black md:font-semibold font-medium items-center">
+            <div className="hidden sm:flex w-full justify-center flex-wrap md:flex-nowrap">
+              <ul className="flex gap-[5%]  text-[3vw] sm:text-[1.5vw] md:text-[1.5vw] lg:text-[1.3vw] text-black md:font-semibold font-medium items-center">
                 <li><a href="/" className="whitespace-nowrap">Home</a></li>
                 <li><a href="/about" className="whitespace-nowrap">About Us</a></li>
                 <li><a href="/test" className="whitespace-nowrap">Testimonial</a></li>
@@ -135,8 +135,8 @@ const Navbar = () => {
 
 
             {/* Hamburger Icon (shown only on xs) */}
-            <div className="sm:hidden block">
-              <button onClick={toggleMenu} className="text-white text-[6vw] focus:outline-none">
+            <div className="md:hidden block">
+              <button onClick={toggleMenu} className="text-black text-[6vw] focus:outline-none">
                 {isOpen ? <HiOutlineX /> : <HiOutlineMenuAlt3 />}
               </button>
             </div>
