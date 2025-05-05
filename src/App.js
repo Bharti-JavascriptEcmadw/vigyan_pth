@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 import Testimonal from "./pages/Testimonal"
 import Contact from "./pages/Contact"
 import BookDemo from "./components/BookDemo";
-import Event from "./components/Resources/Event";
+import Event from "./pages/Event";
 import LabInAction from "./components/Resources/LabInAction";
 import ProjectVideo from "./components/Resources/ProjectVideo";
 
