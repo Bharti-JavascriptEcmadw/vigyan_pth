@@ -50,7 +50,7 @@ const Navbar = () => {
       </div>
 
       {/* Main Navbar */}
-      <nav className="bg-gradient-to-br from-teal-500 to-blue-800  shadow-md relative sticky top-0 z-50">
+      <nav className="bg-white  shadow-md relative sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
           <div className="flex items-center justify-between h-auto flex-wrap sm:flex-nowrap">
 
@@ -58,7 +58,7 @@ const Navbar = () => {
             <div className="w-[40%] sm:w-[50%] md:w-[20%] lg:w-[25%] lg:h-[6vw]">
               <a href="/" className="flex items-center">
                 <img
-                  src="/assetes/vigyan/logo-light.png"
+                  src="/assetes/vigyan/logo.png"
                   alt="Logo"
                   className="h-[10vw] sm:h-[5vw] md:h-[6vw] lg:h-[5vw] w-[19vw] md:w-[12vw] lg:w-[25vw] max-w-full object-contain"
                 />
@@ -67,7 +67,7 @@ const Navbar = () => {
 
             {/* Nav Links (hidden on xs, shown on sm+) */}
             <div className="hidden sm:flex w-full justify-center flex-wrap md:flex-nowrap sticky top-0 z-50">
-              <ul className="flex gap-[2%] text-[3vw] sm:text-[1.5vw] md:text-[1.5vw] lg:text-[1.3vw] text-white md:font-semibold font-medium items-center">
+              <ul className="flex gap-[2%] text-[3vw] sm:text-[1.5vw] md:text-[1.5vw] lg:text-[1.3vw] text-black md:font-semibold font-medium items-center">
                 <li><a href="/" className="whitespace-nowrap">Home</a></li>
                 <li><a href="/about" className="whitespace-nowrap">About Us</a></li>
                 <li><a href="/test" className="whitespace-nowrap">Testimonial</a></li>
