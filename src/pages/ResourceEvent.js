@@ -4,7 +4,7 @@ import InfoCards from '../components/Resources/InfoCards';
 
 
 
-const About = () => {
+const ResourceEvent = () => {
   return (
     <div>
 
@@ -15,4 +15,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default ResourceEvent;

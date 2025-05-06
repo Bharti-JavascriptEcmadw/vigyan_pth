@@ -8,11 +8,11 @@ import Footer from "./components/Footer";
 import Testimonal from "./pages/Testimonal"
 import Contact from "./pages/Contact"
 import BookDemo from "./components/BookDemo";
-import Event from "./pages/Event";
+import Event from "./pages/ResourceEvent";
 import LabInAction from "./components/Resources/LabInAction";
 import ProjectVideo from "./components/Resources/ProjectVideo";
 import SchoolProgram from "./pages/SchoolProgram";
-import Composite_Lab from "./pages/Composite_Lab";
+import CompositeLab from "./pages/CompositeLab";
 
 
 
@@ -34,7 +34,7 @@ const App = () => {
         <Route path="/lab-in-action" element={<LabInAction />} />
         <Route path="/event" element={<Event />} />
         <Route path="/school-program" element={<SchoolProgram />} />
-        <Route path="/composite-lab" element={<Composite_Lab />} />
+        <Route path="/composite-lab" element={<CompositeLab />} />
 
 
 

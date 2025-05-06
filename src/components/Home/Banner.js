@@ -4,7 +4,10 @@ import { Link } from "react-router-dom";
 const images = [
   "/assetes/vigyan/Robot.png",
   "/assetes/vigyan/slider-1.jpg",
+  "/assetes/vigyan/slider-3.jpg",
   "/assetes/vigyan/robot1.avif",
+
+
 ];
 
 const Banner = () => {

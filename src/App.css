@@ -360,17 +360,4 @@ body {
 /* innovation  */
 
 
-@keyframes twinkle {
-  0%, 100% {
-    opacity: 1;
-    color:tomato;
-  }
-  50% {
-    opacity: 0.0;
-    color:rgb(1, 207, 104)
-  }
-}
 
-.twinkle {
-  animation: twinkle 1s infinite ease-in-out;
-}
