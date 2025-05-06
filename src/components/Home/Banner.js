@@ -27,7 +27,7 @@ const Banner = () => {
       }}
     >
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-black opacity-60 transition-opacity duration-500"></div>
+      <div className="absolute inset-0 bg-black opacity-60 transition-opacity duration-100"></div>
 
       {/* Content */}
       <div className="relative z-10 text-white text-center px-4 sm:px-8 max-w-4xl animate-fade-in">
@@ -49,11 +49,12 @@ const Banner = () => {
         </div> */}
 
     <div className="mt-6 flex flex-wrap justify-center gap-4 animate-slide-up-delay">
+      <Link to="/about">
   <button className="bg-teal-500 hover:bg-red-700 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full font-semibold transition-transform transform hover:scale-105">
     ABOUT MORE →
   </button>
-  
-  <Link to="/book-demo">
+  </Link>
+  <Link to="/bookdemo">
     <button className="bg-blue-700 hover:bg-red-700 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full font-semibold transition-transform transform hover:scale-105">
       BOOK DEMO !!
     </button>
