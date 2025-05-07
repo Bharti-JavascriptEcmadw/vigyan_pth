@@ -6,18 +6,21 @@ const ContactForm = () => {
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-30 z-0"></div>
 
-      <div className="relative z-10 max-w-7xl mx-auto flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
-        {/* Image */}
-        <div className="w-full lg:w-[50%] h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] rounded-xl overflow-hidden shadow-2xl">
-          <img
-            src="/assetes/vigyan/contactImg.jpg"
-            alt="Robot"
+      <div className="relative z-10 max-w-7xl mx-auto flex flex-col lg:flex-row justify-center items-center gap-y-10 lg:gap-x-16 p-4">
+        {/* Video Section */}
+        <div className="w-full lg:w-[40%] h-[300px] sm:h-[350px] md:h-[400px] lg:h-[500px] rounded-xl overflow-hidden shadow-2xl mx-auto">
+          <video
+            src="/assetes/school/7.mp4" // Replace with your video path
             className="w-full h-full object-cover"
+            autoPlay
+            muted
+            loop
+            playsInline
           />
         </div>
 
         {/* Contact Form */}
-        <div className="w-full lg:w-[50%] bg-white/80 backdrop-blur-lg p-6 sm:p-8 md:p-10 rounded-2xl shadow-2xl border border-white/20">
+        <div className="w-full lg:w-[50%] bg-white/80 backdrop-blur-lg p-6 sm:p-8 md:p-10 rounded-2xl shadow-2xl border border-white/20 mx-auto">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-gray-800 text-center lg:text-left">
             Contact Us
           </h2>

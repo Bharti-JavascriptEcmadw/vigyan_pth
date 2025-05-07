@@ -14,9 +14,9 @@ const AboutVigyan = () => {
       {/* Left Image */}
       <div className="w-full lg:w-1/2 z-10 mb-10 lg:mb-0 flex justify-center">
         <img
-          src="/assetes/vigyan/Robot.png"
+          src="/assetes/School/Home/16.jpeg"
           alt="Robotic Education"
-          className="w-full max-w-md lg:max-w-lg h-auto rounded-xl shadow-2xl"
+          className="w-full max-w-md lg:max-w-lg h-[560px] rounded-xl shadow-2xl"
         />
       </div>
 

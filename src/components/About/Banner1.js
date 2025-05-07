@@ -1,15 +1,8 @@
 
-
-
-
-
-
-
 import React, { useState, useEffect } from "react";
 
 const Banner = () => {
   const [currentPage, setCurrentPage] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
 
   const banners = [
     {
@@ -18,26 +11,26 @@ const Banner = () => {
       description:
         "Advancing the Next Generation through Technological Advances",
       button: "About Services",
-      image: "/assetes/about/banner2.jpeg",
+      image: "/assetes/school/About/28.jpg",
     },
     {
       logo: "What is Vigyan Pathshala?",
       description:
         "Vigyan Pathshala Private Limited integrates robotics, science, and STEM in real projects. We offer hands-on learning with real-world applications, building critical thinking and problem-solving skills.",
       button: "Discover more",
-      image: "/assetes/about/banner1.jpeg",
+      image: "/assetes/school/About/8.jpeg",
     },
   ];
 
   useEffect(() => {
-    if (isPaused) return;
+    
     const interval = setInterval(() => {
       setCurrentPage((prevPage) =>
         prevPage < banners.length - 1 ? prevPage + 1 : 0
       );
     }, 8000);
     return () => clearInterval(interval);
-  }, [isPaused]);
+  },);
 
   return (
     <div className="w-full min-h-[70vh] sm:min-h-[60vh] md:min-h-[50vh] bg-gray-300 flex items-center justify-center px-4 sm:px-6 md:px-10 py-10  lg:h-auto  bg-gradient-to-r from-gray-900 to-teal-500">

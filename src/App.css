@@ -361,3 +361,17 @@ body {
 
 
 
+@layer utilities {
+  .rotate-y-90 {
+    transform: rotateY(90deg);
+  }
+  .rotate-y-0 {
+    transform: rotateY(0deg);
+  }
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+  .transform-3d {
+    perspective: 1000px;
+  }
+}
