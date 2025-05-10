@@ -190,17 +190,24 @@
 // export default Banner;
 
 
-import React, { useEffect,  useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Banner = () => {
-  const images = [
-    "/assets/Home/home_Banner.jpg",
-    "/assets/Home/R3.png",
+  const images = useMemo(() => [
+    // "/assets/Home/home_Banner.jpg",
+    // "/assets/Home/R3.png",
+    // "/assets/Home/26.jpg",
+    // "/assets/Home/23.jpg",
+    // "/assets/Home/21.jpg",
+
+
+     "/assets/video_gallery/7.jpg",
+    // "/assets/Home/R3.png",
     "/assets/Home/26.jpg",
-    "/assets/Home/23.jpg",
+    // "/assets/Home/23.jpg",
     "/assets/Home/21.jpg",
-  ];
+  ], []);
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [imageLoaded, setImageLoaded] = useState(false);
