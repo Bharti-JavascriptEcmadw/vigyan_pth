@@ -190,37 +190,31 @@
 // export default Banner;
 
 
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect,  useState } from "react";
 import { Link } from "react-router-dom";
 
 const Banner = () => {
-  const images = useMemo(() => [
+  const images = [
     "/assets/Home/home_Banner.jpg",
-    // "/assets/Home/R3.png",
+    "/assets/Home/R3.png",
     "/assets/Home/26.jpg",
     "/assets/Home/23.jpg",
     "/assets/Home/21.jpg",
-  ], []);
+  ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [imageLoaded, setImageLoaded] = useState(false);
-useEffect(() => {
-  const interval = setInterval(() => {
-    const nextIndex = (currentIndex + 1) % images.length;
 
-    const img = new Image();
-    img.src = images[nextIndex];
-    img.onload = () => {
-      setCurrentIndex(nextIndex);
-      setImageLoaded(true);
-    };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+      setImageLoaded(false); // reset image load state
+    }, 3000);
 
-    setImageLoaded(false);
-  }, 3000);
-
-  return () => clearInterval(interval);
-}, [currentIndex, images]);
-
+    return () => clearInterval(interval);
+  }, [images]);
 
   return (
     <section className="w-full bg-gradient-to-br from-[#f9f9f9] to-[#f0f4ff] overflow-hidden py-10">
