@@ -29,14 +29,14 @@ const App = () => {
 
         <Route path="/success-story" element={<Testimonal/>} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/bookdemo" element={<BookDemo />} />
-        <Route path="/lab-in-action" element={<LabInAction />} />
-        <Route path="/event" element={<ResourceEvent/>} />
-        <Route path="/courses" element={<Courses />} />
+        {/* <Route path="/bookdemo" element={<BookDemo />} /> */}
+        {/* <Route path="/lab-in-action" element={<LabInAction />} /> */}
+        {/* <Route path="/event" element={<ResourceEvent/>} /> */}
+        {/* <Route path="/courses" element={<Courses />} /> */}
 
-        <Route path="/school-program" element={<SchoolProgram />} />
-        <Route path="/composite-lab" element={<CompositeLab />} />
-        <Route path="/drone-iot" element={<DroneIot />} />
+        {/* <Route path="/school-program" element={<SchoolProgram />} /> */}
+        {/* <Route path="/composite-lab" element={<CompositeLab />} /> */}
+        {/* <Route path="/drone-iot" element={<DroneIot />} /> */}
 
 
 
