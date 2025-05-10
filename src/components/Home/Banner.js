@@ -196,7 +196,7 @@ import { Link } from "react-router-dom";
 const Banner = () => {
   const images = useMemo(() => [
     "/assets/Home/home_Banner.jpg",
-    "/assets/Home/R3.png",
+    // "/assets/Home/R3.png",
     "/assets/Home/26.jpg",
     "/assets/Home/23.jpg",
     "/assets/Home/21.jpg",
