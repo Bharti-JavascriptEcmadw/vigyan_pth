@@ -698,21 +698,84 @@ const Navbar = () => {
 
         {/* Mobile dropdown menu */}
         {isOpen && (
-          <div className="sm:hidden absolute top-full left-0 w-full bg-white shadow-md z-50">
-            <ul className="flex flex-col items-center space-y-4 py-6 text-gray-700 font-bold text-[4.5vw]">
-              <li><a href="/" onClick={toggleMenu}>Home</a></li>
-              <li><a href="/about" onClick={toggleMenu}>About Us</a></li>
-              <li><a href="/test" onClick={toggleMenu}>Testimonial</a></li>
-              <li><a href="/solutions/feature1" onClick={toggleMenu}>Our Solution</a></li>
-              <li><a href="/contact" onClick={toggleMenu}>Contact</a></li>
-              <li>
-                <button className="bg-[#FBAF3F] hover:bg-yellow-500 text-white px-8 py-2 rounded-full font-semibold text-[4.5vw]">
-                  BOOK DEMO
-                </button>
-              </li>
-            </ul>
-          </div>
+  <div className="sm:hidden absolute top-full left-0 w-full bg-white shadow-md z-50">
+    <ul className="flex flex-col items-center space-y-5 py-6 text-gray-800 font-semibold text-[4.5vw]">
+      <li><a href="/" onClick={toggleMenu} className="hover:text-yellow-500">Home</a></li>
+      <li><a href="/about" onClick={toggleMenu} className="hover:text-yellow-500">About Us</a></li>
+      <li><a href="/test" onClick={toggleMenu} className="hover:text-yellow-500">Success Story</a></li>
+      <li><a href="/courses" onClick={toggleMenu} className="hover:text-yellow-500">Courses</a></li>
+
+      {/* School Program Dropdown */}
+      <li className="w-full flex flex-col items-center">
+        <button
+          onClick={() => setIsSolutionOpen(!isSolutionOpen)}
+          className="hover:text-yellow-500"
+        >
+          School Program ▾
+        </button>
+        {isSolutionOpen && (
+          <ul className="mt-2 space-y-2 text-[4vw] text-gray-600 font-normal text-center">
+            <li>
+              <a href="/event" onClick={toggleMenu} className="hover:text-yellow-500">Event</a>
+            </li>
+            <li>
+              <a
+                href="https://vigyanpathshala.com/img/Vigyanpathshala_brochure.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-yellow-500"
+              >
+                Brochure
+              </a>
+            </li>
+            <li>
+              <a href="/lab-in-action" onClick={toggleMenu} className="hover:text-yellow-500">Lab in Action</a>
+            </li>
+          </ul>
         )}
+      </li>
+
+      {/* Resources Dropdown */}
+      <li className="w-full flex flex-col items-center">
+        <button
+          onClick={() => setIsResourcesOpen(!isResourcesOpen)}
+          className="hover:text-yellow-500"
+        >
+          Resources ▾
+        </button>
+        {isResourcesOpen && (
+          <ul className="mt-2 space-y-2 text-[4vw] text-gray-600 font-normal text-center">
+            <li>
+              <a href="/event" onClick={toggleMenu} className="hover:text-yellow-500">Event</a>
+            </li>
+            <li>
+              <a
+                href="https://vigyanpathshala.com/img/Vigyanpathshala_brochure.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-yellow-500"
+              >
+                Brochure
+              </a>
+            </li>
+            <li>
+              <a href="/lab-in-action" onClick={toggleMenu} className="hover:text-yellow-500">Lab in Action</a>
+            </li>
+          </ul>
+        )}
+      </li>
+
+      <li><a href="/contact" onClick={toggleMenu} className="hover:text-yellow-500">Contact</a></li>
+
+      <li>
+        <button className="bg-[#FBAF3F] hover:bg-yellow-500 text-white px-10 py-3 rounded-full font-semibold text-[4.5vw] transition-all duration-200">
+          BOOK DEMO
+        </button>
+      </li>
+    </ul>
+  </div>
+)}
+
       </nav>
     </>
   );
