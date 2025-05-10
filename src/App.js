@@ -7,16 +7,16 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Testimonal from "./pages/Testimonal"
 import Contact from "./pages/Contact"
-import BookDemo from "./components/BookDemo";
-import Event from "./pages/ResourceEvent";
-import LabInAction from "./components/Resources/LabInAction";
-import ProjectVideo from "./components/Resources/ProjectVideo";
+import BookDemo from "./pages/BookDemo";
+import LabInAction from "./pages/LabInAction";
+// import ProjectInVideo from "./pages/ProjectInVideo";
+import ResourceEvent from "./pages/ResourceEvent";
 import SchoolProgram from "./pages/SchoolProgram";
 import CompositeLab from "./pages/CompositeLab";
+import DroneIot from "./pages/DroneIot";
+import Courses from "./pages/Courses";
 
 
-
-// import other pages like About, Contact, etc., if any
 
 const App = () => {
   return (
@@ -27,14 +27,17 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
 
-        {/* You can add more routes here */}
-        <Route path="/test" element={<Testimonal/>} />
+        <Route path="/success-story" element={<Testimonal/>} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/bookdemo" element={<BookDemo />} />
         <Route path="/lab-in-action" element={<LabInAction />} />
-        <Route path="/event" element={<Event />} />
-        {/* <Route path="/school-program" element={<SchoolProgram />} /> */}
-        {/* <Route path="/composite-lab" element={<CompositeLab />} /> */}
+        <Route path="/event" element={<ResourceEvent/>} />
+        <Route path="/courses" element={<Courses />} />
+
+        <Route path="/school-program" element={<SchoolProgram />} />
+        <Route path="/composite-lab" element={<CompositeLab />} />
+        <Route path="/drone-iot" element={<DroneIot />} />
+
 
 
 

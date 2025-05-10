@@ -9,7 +9,7 @@ const Contact = () => {
       <div
         className="w-full relative"
         style={{
-          backgroundImage: "url('/assetes/vigyan/robo.jpg')",
+          backgroundImage: "url('/assets/contact/R2.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "top",
           backgroundRepeat: "no-repeat",
@@ -23,10 +23,11 @@ const Contact = () => {
       </div>
 
       {/* Contact Info Grid */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center mt-10 px-2">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center mt-10 px-2
+      ">
 
 {/* Phone */}
-<div className="bg-gradient-to-br from-cyan-200 to-blue-100 text-black border border-gray-200 p-6 rounded hover:shadow-lg transition">
+<div className="bg-gradient-to-br from-cyan-200 to-blue-100 text-black border border-gray-200 p-6 rounded hover:shadow-lg transition  animate-rotateYLeft origin-center transition-all duration-500 ease-in-out  border-4 border-dotted border-blue-400">
   <div className="flex justify-center mb-4">
     <div className="bg-cyan-400 p-4 rounded-full">
       <FaPhone className="text-black text-xl" />
@@ -37,7 +38,7 @@ const Contact = () => {
 </div>
 
 {/* Address */}
-<div className="bg-gradient-to-br from-green-200 to-lime-100 text-black border border-gray-200 p-6 rounded hover:shadow-lg transition">
+<div className="bg-gradient-to-br from-green-200 to-lime-100 text-black border-4 border-dotted border-blue-400 p-6 rounded hover:shadow-lg transition animate-rotateYLeft origin-center transition-all duration-500 ease-in-out">
   <div className="flex justify-center mb-4">
     <div className="bg-cyan-400 p-4 rounded-full">
       <FaMapMarkerAlt className="text-black text-xl" />
@@ -48,8 +49,9 @@ const Contact = () => {
   <p>England</p>
 </div>
 
+
 {/* Email */}
-<div className="bg-gradient-to-br from-pink-200 to-red-100 text-black border border-gray-200 p-6 rounded hover:shadow-lg transition">
+<div className="bg-gradient-to-br from-pink-200 to-red-100 text-black border border-gray-200 p-6 rounded hover:shadow-lg transition animate-rotateYLeft origin-center transition-all duration-500 ease-in-out  border-4 border-dotted border-blue-400">
   <div className="flex justify-center mb-4">
     <div className="bg-cyan-400 p-4 rounded-full">
       <FaEnvelope className="text-black text-xl" />
@@ -60,7 +62,8 @@ const Contact = () => {
 </div>
 
 {/* Open Time */}
-<div className="bg-gradient-to-br from-yellow-200 to-orange-100 text-black border border-gray-200 p-6 rounded hover:shadow-lg transition">
+<div className="bg-gradient-to-br from-yellow-200 to-orange-100 text-black border border-gray-200 p-6 rounded hover:shadow-lg transition animate-rotateYLeft origin-center transition-all duration-500 ease-in-out 
+ border-4 border-dotted border-blue-400">
   <div className="flex justify-center mb-4">
     <div className="bg-cyan-400 p-4 rounded-full">
       <AiOutlineClockCircle className="text-black text-xl" />
@@ -77,3 +80,7 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+
+// animate-rotateYLeft origin-center transition-all duration-500 ease-in-out

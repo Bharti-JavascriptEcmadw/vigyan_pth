@@ -1,14 +1,14 @@
 import React from 'react';
-import Event from '../components/Resources/Event';
 import InfoCards from '../components/Resources/InfoCards';
+import EventHighlights from '../components/Resources/EventHighlights';
 
 
 
 const ResourceEvent = () => {
   return (
     <div>
+<EventHighlights/>
 
-<Event/>
 <InfoCards/>
 
     </div>

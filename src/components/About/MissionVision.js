@@ -2,7 +2,6 @@
 
 
 import React from 'react';
-// import './MissionVision.css'; // for custom animation
 
 const MissionVision = () => {
   return (
@@ -16,7 +15,7 @@ const MissionVision = () => {
       <div className="mx-auto w-full max-w-3xl perspective">
         <div className="rounded-xl overflow-hidden shadow-2xl bg-white transform-style animated-3d hover:scale-105 transition-transform duration-700 ease-in-out">
           <img
-            src="/assetes/vigyan/missionandvission.jpeg"
+            src="/assets/vigyan/missionandvission.jpeg"
             alt="Mission and Vision"
             className="w-full h-auto object-cover"
           />

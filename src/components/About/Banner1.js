@@ -11,14 +11,14 @@ const Banner = () => {
       description:
         "Advancing the Next Generation through Technological Advances",
       button: "About Services",
-      image: "/assetes/school/About/28.jpg",
+      image: "/assets/about/banner1-pica.png",
     },
     {
       logo: "What is Vigyan Pathshala?",
       description:
         "Vigyan Pathshala Private Limited integrates robotics, science, and STEM in real projects. We offer hands-on learning with real-world applications, building critical thinking and problem-solving skills.",
       button: "Discover more",
-      image: "/assetes/school/About/8.jpeg",
+      image: "/assets/about/1-pica.png",
     },
   ];
 
@@ -33,7 +33,7 @@ const Banner = () => {
   },);
 
   return (
-    <div className="w-full min-h-[70vh] sm:min-h-[60vh] md:min-h-[50vh] bg-gray-300 flex items-center justify-center px-4 sm:px-6 md:px-10 py-10  lg:h-auto  bg-gradient-to-r from-gray-900 to-teal-500">
+    <div className="w-full min-h-[70vh] sm:min-h-[60vh] md:min-h-[50vh]  flex items-center justify-center px-4 sm:px-6 md:px-10 py-10  lg:h-auto bg-gradient-to-r from-cyan-400 to-white ">
       <div className="w-full max-w-7xl flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16
       lg:mt-[50px]">
         

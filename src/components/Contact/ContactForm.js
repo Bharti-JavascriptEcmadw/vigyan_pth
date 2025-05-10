@@ -2,15 +2,17 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <section className="relative py-12 px-4 sm:px-6 md:px-10 lg:px-16 bg-gradient-to-br from-teal-500 via-blue-700 to-blue-200">
+    <section className="relative py-8 px-4 sm:px-6 lg:px-12 bg-gradient-to-br from-teal-500 via-blue-700 to-blue-200">
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-30 z-0"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-30 z-0 "></div>
 
-      <div className="relative z-10 max-w-7xl mx-auto flex flex-col lg:flex-row justify-center items-center gap-y-10 lg:gap-x-16 p-4">
+      <div className="relative z-10 max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-6 items-center 
+      justify-around
+      ">
         {/* Video Section */}
-        <div className="w-full lg:w-[40%] h-[300px] sm:h-[350px] md:h-[400px] lg:h-[500px] rounded-xl overflow-hidden shadow-2xl mx-auto">
+        <div className="w-full lg:w-2/5 h-[250px] sm:h-[300px] lg:h-[350px] rounded-lg overflow-hidden shadow-xl">
           <video
-            src="/assetes/school/7.mp4" // Replace with your video path
+            src="/assets/contact/35.mp4"
             className="w-full h-full object-cover"
             autoPlay
             muted
@@ -20,17 +22,17 @@ const ContactForm = () => {
         </div>
 
         {/* Contact Form */}
-        <div className="w-full lg:w-[50%] bg-white/80 backdrop-blur-lg p-6 sm:p-8 md:p-10 rounded-2xl shadow-2xl border border-white/20 mx-auto">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-gray-800 text-center lg:text-left">
-            Contact Us
+        <div className="w-full lg:w-[40%] bg-white/70 backdrop-blur-md p-6 sm:p-8 rounded-xl shadow-lg border border-white/30">
+          <h2 className="text-2xl sm:text-3xl font-semibold mb-4 text-gray-800 text-center lg:text-left">
+            Get in Touch
           </h2>
-          <form className="space-y-5">
+          <form className="space-y-4">
             <div>
-              <label className="block mb-1 text-sm font-medium text-gray-700">Your Name</label>
+              <label className="block mb-1 text-sm font-medium text-gray-700">Name</label>
               <input
                 type="text"
                 placeholder="John Doe"
-                className="w-full bg-white border border-gray-300 p-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-400 transition"
+                className="w-full border border-gray-300 p-2 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-cyan-400"
               />
             </div>
             <div>
@@ -38,7 +40,7 @@ const ContactForm = () => {
               <input
                 type="email"
                 placeholder="john@example.com"
-                className="w-full bg-white border border-gray-300 p-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-400 transition"
+                className="w-full border border-gray-300 p-2 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-cyan-400"
               />
             </div>
             <div>
@@ -46,21 +48,21 @@ const ContactForm = () => {
               <input
                 type="text"
                 placeholder="+91 9876543210"
-                className="w-full bg-white border border-gray-300 p-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-400 transition"
+                className="w-full border border-gray-300 p-2 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-cyan-400"
               />
             </div>
             <div>
               <label className="block mb-1 text-sm font-medium text-gray-700">Message</label>
               <textarea
-                rows="4"
-                placeholder="Write your message here..."
-                className="w-full bg-white border border-gray-300 p-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-400 transition"
+                rows="3"
+                placeholder="Write your message..."
+                className="w-full border border-gray-300 p-2 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-cyan-400"
               />
             </div>
             <div className="text-center lg:text-left">
               <button
                 type="submit"
-                className="bg-cyan-500 text-white font-semibold py-3 px-6 rounded-full hover:bg-cyan-600 shadow-md transition-all"
+                className="bg-cyan-500 text-white text-sm font-medium py-2 px-5 rounded-full hover:bg-cyan-600 transition"
               >
                 Send Message
               </button>

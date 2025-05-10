@@ -1,4 +1,4 @@
-"use client";
+
 import React, { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import {Link} from "react-router-dom"
@@ -6,38 +6,38 @@ const services = [
   {
     title: "STEM & Robotics Lab",
     description:
-      "Hands-on STEM and robotics programs that foster critical thinking and technical skills.",
-    video: "/assetes/school/Home/1.mp4",
+      "An experiential learning environment where students explore science, technology, engineering, and math through robotics, coding, and hands-on innovation.",
+    video: "/assets/Home/1.mp4",
   },
   {
     title: "AI & IoT Lab",
     description:
-      "Equip students with real-world skills in Artificial Intelligence and Internet of Things.",
-    video: "/assetes/school/Home/10.mp4",
+      "A cutting-edge lab designed to introduce students to Artificial Intelligence and the Internet of Things through practical applications, projects, and future-ready technologies.",
+    video: "/assets/Home/34.mp4",
   },
   {
     title: "AR/VR Lab",
     description:
-      "Engage students through immersive learning experiences using Augmented and Virtual Reality.",
-    video: "/assetes/school/Home/3.mp4",
+      "Immersive labs that enable students to experience learning through Augmented and Virtual Reality, making complex concepts interactive and engaging.",
+    video: "/assets/Home/7.mp4",
   },
   {
     title: "21st Century Showcase School",
     description:
-      "Support for institutions to adopt NEP-aligned innovation frameworks and learning environments.",
-    video: "/assetes/school/Home/14.mp4",
+      "Transform your institution into a model of modern education with NEP-aligned methodologies, smart classrooms, and a future-ready learning culture.",
+    video: "/assets/Home/15.mp4",
   },
   {
     title: "Pre-Tinkering Lab",
     description:
-      "Encouraging creativity in early learners with structured exploratory activities.",
-    video: "/assetes/school/Home/15.mp4",
+      "Specially crafted for younger learners, this lab sparks curiosity and foundational innovation through guided activities and age-appropriate tools.",
+    video: "/assets/Home/14.mp4",
   },
   {
     title: "ATAL Tinkering Lab",
     description:
-      "Turnkey solutions for ATL labs with DIY kits, mentorship, and training for innovation.",
-    video: "/assetes/school/Home/12.mp4",
+      "Comprehensive ATL setup including high-quality DIY kits, expert mentorship, and training programs to nurture innovation and entrepreneurship in students.",
+    video: "/assets/Home/12.mp4",
   },
 ];
 
@@ -54,30 +54,32 @@ const ServicesSection = () => {
 
   return (
     <section
-      id="services-section"
-      className="w-full bg-gray-900 py-20 px-6 sm:px-10 lg:px-20"
+className="w-full bg-gradient-to-r from-blue-400 to-blue-100 pt-5 px-6 sm:px-10 lg:px-20"
     >
       {/* Header */}
       <div className="text-center max-w-3xl mx-auto mb-16">
-        <h3 className="text-white font-semibold uppercase tracking-wider text-sm mb-3">
+        <h3 className="text-teal-900 font-medium uppercase tracking-widest text-sm mb-4">
           Our Services
         </h3>
-        <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
-          Future-Ready{" "}
-          <span className="text-indigo-600">Learning Solutions</span>
+        <h2 className="text-3xl sm:text-5xl font-bold text-black mb-6 leading-tight">
+          Future-Ready <span className="text-indigo-600">Learning Solutions</span>
         </h2>
-        <p className="text-white text-base">
+        <p className="text-blue-900 text-base sm:text-lg">
           Discover how our technology-driven labs are transforming schools and
           empowering students.
         </p>
       </div>
 
+
       {/* Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 p-7 rounded">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 p-7 rounded 
+      bg-gradient-to-l from-blue-400 to-blue-100 ">
         {services.map((service, index) => (
           <div
             key={index}
-            className="bg-white rounded-3xl shadow-lg hover:shadow-xl transition duration-500 p-6 flex flex-col group"
+            className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition duration-500 p-6 flex flex-col group
+            animate-rotateYLeft  border-t-4 border-t-solid border-t-blue-500"
+            style={{borderTopLeftRadius:"20%",borderBottomRightRadius:"20%"}}
           >
             <div
               className="relative h-44 w-full mb-5 rounded-xl overflow-hidden cursor-pointer"
@@ -103,7 +105,7 @@ const ServicesSection = () => {
               {service.description}
             </p>
             <Link to="/about">
-            <button className="mt-6 self-start bg-teal-700 p-3 rounded text-white font-medium hover:bg-red-800 transition">
+            <button className="mt-6 self-start bg-gray-900 p-3 rounded text-white font-medium hover:bg-cyan-400 transition">
               Learn More →
             </button>
             </Link>
@@ -137,3 +139,10 @@ const ServicesSection = () => {
 };
 
 export default ServicesSection;
+
+
+
+
+
+
+
